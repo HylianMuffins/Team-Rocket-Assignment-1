@@ -5,7 +5,7 @@
 if operator_one == '+' or "-" and operator_two == "*" or "/": 
 
     if operator_two == "*":
-        stored_val = myNum(num1,num3)
+        stored_val = myMul(num1,num3)
     else: 
         stored_val = myDiv(num2,num3)
     
