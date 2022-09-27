@@ -15,13 +15,25 @@ if operator_one == '+' or "-" and operator_two == "*" or "/":
     else:
         final_val = mySub(num1,stored_val)
     
+
     if operator_two == "+":
-        stored_val = myAdd(num1,num2)
-        if operator_two == "+":
-            
+        stored_val = myAdd(num1,num2)     
     elif operator_one == "-":
+        stored_val = mySub(num1,num2)
+    elif operator_two == "*":
+        stored_val = myMul(num1,num2)
+    else:
+        stored_val= myDiv(num1,num2)
+    
+    if operator_two == "+":
+        final_val = myAdd(stored_val,num3)
+    elif operator_two == "-":
+        final_val = mySub(stored_val,num3)
+    elif operator_two == "*":
+        final_val=myMul(stored_val,num3)
+    else:
+        final_val = myDiv(stored_val,num3)
+
         
-
-
 
     return final_val
