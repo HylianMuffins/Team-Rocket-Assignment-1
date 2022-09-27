@@ -1,7 +1,7 @@
 # this is code for control flow 
 # this was charu's code 
 
-
+def control_flow (num1,num2,num3,operator_one,operator_two): 
 if operator_one == '+' or "-" and operator_two == "*" or "/": 
 
     if operator_two == "*":
@@ -29,7 +29,7 @@ else:
     elif operator_two == "-":
         final_val = mySub(stored_val,num3)
     elif operator_two == "*":
-        final_val=myMul(stored_val,num3)
+        final_val= myMul(stored_val,num3)
     else:
         final_val = myDiv(stored_val,num3)
 
